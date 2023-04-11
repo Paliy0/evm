@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Loading Screen</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/loadingStyles.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <img src="assets/img/logo_6th.gif" alt="Loading" />
+    </div>
+
+    <div id="loading-container">
+      <div id="loading-bar"></div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          window.location.href = "index.html";
+        }, 3000);
+      };
+    </script>
+  </body>
+</html>
