@@ -1,7 +1,6 @@
 /* Body */
-
-body {
-  background-color: #fff;
+main {
+  font-family: "Poppins", sans-serif;
 }
 /* Navbar */
 .navbar {
@@ -11,16 +10,24 @@ body {
   align-items: center;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif !important;
 }
 
-.navbar img,
-ul {
-  margin-left: 100px;
+.navbar {
+  min-height: 32px !important;
 }
 
 .navbar-brand img {
-  width: 50%;
-  display: inline-block;
+  margin-left: 4vw;
+  width: 35%;
+  height: auto;
+}
+nav a:hover {
+  color: #3164f4 !important;
+}
+
+.active-custom a {
+  color: #3164f4 !important;
 }
 
 .menu a {
@@ -32,12 +39,21 @@ ul {
 /* Main section */
 .main-section {
   background-color: #fff;
-  padding: 80px 0;
+  padding: 8vw;
 }
 
 .landingCard h1 {
   font-family: "Poppins", sans-serif;
   font-size: 70px;
+}
+
+.pricing-card {
+  box-shadow: 0.5px 2px 6px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.pricing-img img {
+  width: 40%;
 }
 
 .card2 h2 {
@@ -71,8 +87,8 @@ ul {
 }
 
 .card img {
-  width: 70%;
-  height: auto;
+  height: 100%;
+  width: auto;
 }
 
 .steps img {
@@ -100,6 +116,10 @@ ul {
   display: flex;
 }
 
+.btn {
+  margin: 0.3vw;
+}
+
 .btn-blue {
   background-color: #007bff;
   color: #ffffff;
@@ -115,4 +135,38 @@ ul {
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
+}
+
+#pricing {
+  padding-top: 10vh; /* Adjust this value to add the necessary padding */
+  margin-top: -10vh; /* This will move the element up by the same amount as the padding */
+}
+
+#about {
+  font-family: "Poppins", sans-serif;
+  padding-top: 10vh; /* Adjust this value to add the necessary padding */
+  margin-top: -10vh; /* This will move the element up by the same amount as the padding */
+}
+
+.mission-img {
+  width: 100vh !important;
+  height: auto;
+  z-index: -1;
+}
+
+.footer-container {
+  padding-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-logo {
+  width: 50%;
+  margin-bottom: 1.5vh;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  margin-bottom: 1.5vh;
 }

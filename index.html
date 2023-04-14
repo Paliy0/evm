@@ -29,7 +29,7 @@
   <body>
     <header>
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="index.html">
           <img src="assets/img/main-nobg.png" alt="Logo" />
         </a>
@@ -46,14 +46,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+            <li class="nav-item active active-custom">
+              <a class="nav-link" href="">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pricing.html">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -84,7 +84,7 @@
             </div>
             <div class="col-md-4">
               <img
-                src="/assets/img/1st_transparent.gif"
+                src="/assets/animations/1st_transparent.gif"
                 alt="Description of your gif"
                 width="100%"
               />
@@ -123,7 +123,11 @@
               </div>
             </div>
             <div class="col-md-6">
-              <img src="assets/img/card2.png" class="card-img" alt="Image" />
+              <img
+                src="assets/animations/2_tr.gif"
+                class="card-img"
+                alt="Image"
+              />
             </div>
           </div>
         </div>
@@ -142,7 +146,11 @@
         <div class="container mt-5">
           <div class="row no-gutters">
             <div class="col-md-6">
-              <img src="assets/img/card3.png" class="card-img" alt="Image" />
+              <img
+                src="assets/animations/3_tr.gif"
+                class="card-img"
+                alt="Image"
+              />
             </div>
             <div class="col-md-6">
               <div class="card3">
@@ -190,7 +198,11 @@
               </div>
             </div>
             <div class="col-md-6">
-              <img src="assets/img/card4.png" class="card-img" alt="Image" />
+              <img
+                src="assets/animations/4_tr.gif"
+                class="card-img"
+                alt="Image"
+              />
             </div>
           </div>
         </div>
@@ -212,7 +224,7 @@
             <div class="col-md-6">
               <div class="row">
                 <img
-                  src="/assets/img/whitebox_transparent.gif"
+                  src="/assets/animations/whitebox_trasparent.gif"
                   alt="your-image-alt"
                 />
               </div>
@@ -248,8 +260,9 @@
       <section class="pricing-section" id="pricing">
         <div class="container">
           <div class="text-center mb-5">
-            <h2 class="font-weight-bold">Pricing</h2>
-            <p>
+            <h1 class="font-weight-bold">Pricing</h1>
+            <hr />
+            <p class="lead">
               By working closely with our clients, we tailor our 3D scanning
               services to their specific needs and requirements, ensuring that
               the final result is nothing short of exceptional. We're dedicated
@@ -259,24 +272,40 @@
             </p>
           </div>
 
-          <div class="card pricing-card mx-auto mb-5">
+          <div class="card pricing-card mx-auto mb-5 text-center">
             <div class="card-body">
-              <h3 class="card-title font-weight-bold">
-                Get 3 Months free when you sign up for our 3D scanning services
-                today! The price is on request
-              </h3>
-              <button class="btn btn-primary">Contact us</button>
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                  <h3 class="card-title font-weight-bold px-5">
+                    Get 3 Months free when you sign up for our 3D scanning
+                    services today! The price is on request
+                  </h3>
+                </div>
+                <div class="col">
+                  <img
+                    src="/assets/img/clip_pricing-flipped.png"
+                    class="card-img-right rounded-0"
+                    alt="Feature 3"
+                  />
+                </div>
+              </div>
+
+              <a class="btn btn-primary" href="contact.html"> Contact us </a>
             </div>
           </div>
 
-          <div class="row">Features</h2>
+          <h2>Features</h2>
+          <div class="row">
             <div class="col-md-4 mb-4">
               <div class="card pricing-feature-card rounded-0">
                 <div class="card-body">
-                  <h4 class="card-title font-weight-bold">Feature 1</h4>
+                  <h4 class="card-title font-weight-bold">
+                    Core scanning service
+                  </h4>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam ut sapien vel mauris semper bibendum.
+                    3D scanning physical dishes and drinks into highly detailed
+                    virtual models
                   </p>
                 </div>
                 <img
@@ -289,10 +318,12 @@
             <div class="col-md-4 mb-4">
               <div class="card pricing-feature-card rounded-0">
                 <div class="card-body">
-                  <h4 class="card-title font-weight-bold">Feature 2</h4>
+                  <h4 class="card-title font-weight-bold">
+                    Creation and editing of digital models
+                  </h4>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam ut sapien vel mauris semper bibendum.
+                    After we capture the virtual models we spend careful time
+                    cleaning them up to perfection
                   </p>
                 </div>
                 <img
@@ -305,11 +336,8 @@
             <div class="col-md-4 mb-4">
               <div class="card pricing-feature-card rounded-0">
                 <div class="card-body">
-                  <h4 class="card-title font-weight-bold">Feature 3</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam ut sapien vel mauris semper bibendum.
-                  </p>
+                  <h4 class="card-title font-weight-bold">Custom Link</h4>
+                  <p class="card-text">We create a</p>
                 </div>
                 <img
                   src="/assets/img/features/3.png"
@@ -351,19 +379,31 @@
               </div>
             </div>
             <div class="col-md-4 mb-4">
-              <div class="card pricing-feature-card rounded-0">
-                <div class="card-body">
-                  <h4 class="card-title font-weight-bold">Feature 6</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam ut sapien vel mauris semper bibendum.
-                  </p>
+              <div class="row card pricing-feature-card rounded-0">
+                <div class="row">
+                  <div class="card-body">
+                    <div class="col">
+                      <div class="row">
+                        <h4 class="card-title font-weight-bold">
+                          Request changes to the menu
+                        </h4>
+                      </div>
+                      <div class="row">
+                        <p class="card-text">
+                          A menu change could be implemented without additional
+                          fee
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <img
+                        src="/assets/img/features/6.png"
+                        class="card-img-right rounded-0"
+                        alt="Feature 6"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <img
-                  src="/assets/img/features/6.png"
-                  class="card-img-right rounded-0"
-                  alt="Feature 6"
-                />
               </div>
             </div>
           </div>
@@ -375,30 +415,101 @@
           <div class="row">
             <div class="col-md-12 text-center mb-5">
               <h1 class="font-weight-bold">About Us</h1>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum venenatis ipsum, sed tincidunt est viverra eu. In pellentesque nisl et ante malesuada, vel vestibulum metus elementum. Nam euismod interdum tortor non dictum.</p>
+              <hr />
+              <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                elementum venenatis ipsum, sed tincidunt est viverra eu. In
+                pellentesque nisl et ante malesuada, vel vestibulum metus
+                elementum. Nam euismod interdum tortor non dictum.
+              </p>
             </div>
           </div>
           <div class="row">
             <div class="col-md-6 mb-5">
-              <img src="/assets/img/about.png" alt="About Image" class="img-fluid rounded">
+              <img
+                src="/assets/img/about.png"
+                alt="About Image"
+                class="img-fluid rounded"
+              />
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 mb-5">
+            <div class="col-md-12 mb-5 text-center">
               <h2 class="font-weight-bold">Our Mission</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum venenatis ipsum, sed tincidunt est viverra eu. In pellentesque nisl et ante malesuada, vel vestibulum metus elementum. Nam euismod interdum tortor non dictum.</p>
+              <hr />
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 mb-5">
-              <img src="/assets/img/mission.png" alt="Mission Image" class="img-fluid rounded">
+            <div class="col">
+              <h3 class="ms-1">We are excited to watch you grow</h3>
+            </div>
+            <div class="col">
+              <img
+                src="/assets/img/undraw_waiting__for_you_ldha 1.svg"
+                alt="Mission Image"
+                class="img-fluid rounded mission-img"
+              />
             </div>
           </div>
         </div>
-        
       </section>
-
     </main>
+    <footer>
+      <div class="container footer-container">
+        <hr />
+        <div class="row">
+          <div class="col text-center text-md-left">
+            <img
+              class="footer-logo"
+              src="assets/img/main-nobg.png"
+              alt="Logo"
+            />
+            <p>
+              2023 &copy; EVM Innovations<br />
+              All Rights Reserved.
+            </p>
+          </div>
+          <div class="col text-center">
+            <div>
+              <a class="footer-link" href="">Home</a>
+            </div>
+            <div>
+              <a class="footer-link" href="#pricing">Pricing</a>
+            </div>
+            <div>
+              <a class="footer-link" href="#about">About Us</a>
+            </div>
+            <div>
+              <a class="footer-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div class="col text-center">
+            <div>
+              <a class="footer-link" href="#">Facebook</a>
+            </div>
+            <div>
+              <a class="footer-link" href="#">LinkedIn</a>
+            </div>
+            <div>
+              <a class="footer-link" href="#">Twitter</a>
+            </div>
+            <div>
+              <a class="footer-link" href="#">Instagram</a>
+            </div>
+          </div>
+          <div class="col text-center text-md-right">
+            <div>
+              <a class="footer-link" href="#">Privacy Agreement</a>
+            </div>
+            <div>
+              <a class="footer-link" href="#">Terms of Service</a>
+            </div>
+          </div>
+          <div class="col text-center text-md-right"></div>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"

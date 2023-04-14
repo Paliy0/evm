@@ -1,0 +1,52 @@
+body {
+  background-image: url("../img/contact-bg.svg");
+}
+
+.active-custom a {
+  color: #3164f4 !important;
+}
+
+.container {
+  margin-top: 13vh !important;
+  max-width: 90vw !important;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10vw;
+}
+
+.form-control-underline {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 20px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.form-control-underline:focus {
+  border: none;
+  outline: none;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+/*edit input width*/
+.form-group input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 20vw;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
