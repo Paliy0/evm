@@ -82,13 +82,17 @@ nav a:hover {
   background-color: #fff;
 }
 
+.card2 {
+  padding-top: 10vh;
+}
+
 .card-body {
   padding: 40px;
 }
 
 .card img {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
 }
 
 .steps img {
@@ -169,4 +173,22 @@ nav a:hover {
   color: #000;
   display: block;
   margin-bottom: 1.5vh;
+}
+.card-text {
+  margin-top: 2.5vh;
+}
+
+.card-body h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-body p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-img-right {
+  height: auto;
+  width: 100% !important;
 }
