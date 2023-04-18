@@ -2,6 +2,10 @@
 main {
   font-family: "Poppins", sans-serif;
 }
+
+p {
+  font-size: large;
+}
 /* Navbar */
 .navbar {
   background-color: #ffffff;
@@ -42,9 +46,21 @@ nav a:hover {
   padding: 8vw;
 }
 
+.landingCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .landingCard h1 {
   font-family: "Poppins", sans-serif;
   font-size: 70px;
+  /*text-align: start;  add this line to center the text */
+}
+
+.landingCard button {
+  margin: 0 10px; /* add this line to add some spacing between the buttons */
 }
 
 .pricing-card {
@@ -53,7 +69,7 @@ nav a:hover {
 }
 
 .pricing-img img {
-  width: 40%;
+  width: 50%; /* increase the width of the image to 50% */
 }
 
 .card2 h2 {
@@ -74,6 +90,11 @@ nav a:hover {
   border-radius: none;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* add this line to center the content vertically */
 }
 
 .card1 {
@@ -90,8 +111,8 @@ nav a:hover {
   padding: 40px;
 }
 
-.card img {
-  width: 100%;
+.card-img {
+  width: 70%;
   height: auto;
 }
 

@@ -1,0 +1,40 @@
+{
+  "name": "evm",
+  "version": "1.0.0",
+  "description": "EVM Innovations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paliy0/evm.git"
+  },
+  "keywords": [
+    "evm",
+    "EVM",
+    "evm",
+    "innovations",
+    "EVM",
+    "innovations",
+    "evm",
+    "inovations",
+    "3d",
+    "3D",
+    "solutions",
+    "AR",
+    "augmented",
+    "reality"
+  ],
+  "author": "EVM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paliy0/evm/issues"
+  },
+  "homepage": "https://github.com/Paliy0/evm#readme",
+  "dependencies": {
+    "@cloudinary/url-gen": "^1.10.0",
+    "install": "^0.13.0",
+    "npm": "^9.6.4"
+  }
+}
