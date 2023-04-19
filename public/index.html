@@ -24,14 +24,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,100&family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/img/main-nobg.png" alt="Logo" />
+          <img src="../assets/img/main-nobg.png" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -310,7 +310,7 @@
                   </div>
                   <div class="col-6">
                     <img
-                      src="/assets/img/features/1.png"
+                      src="../assets/img/features/1.png"
                       class="card-img-right rounded-0 img-fluid"
                       alt="Feature 1"
                     />
@@ -334,7 +334,7 @@
                   </div>
                   <div class="col-6">
                     <img
-                      src="/assets/img/features/2.png"
+                      src="../assets/img/features/1.png"
                       class="card-img-right rounded-0 img-fluid"
                       alt="Feature 2"
                     />
@@ -355,7 +355,7 @@
                   </div>
                   <div class="col-6">
                     <img
-                      src="/assets/img/features/3.png"
+                      src="../assets/img/features/1.png"
                       class="card-img-right rounded-0 img-fluid"
                       alt="Feature 3"
                     />
@@ -378,7 +378,7 @@
                   </div>
                   <div class="col-6">
                     <img
-                      src="/assets/img/features/4.png"
+                      src="../assets/img/features/1.png"
                       class="card-img-right rounded-0 img-fluid"
                       alt="Feature 4"
                     />
@@ -402,7 +402,7 @@
                   </div>
                   <div class="col-6">
                     <img
-                      src="/assets/img/features/5.png"
+                      src="../assets/img/features/1.png"
                       class="card-img-right rounded-0 img-fluid"
                       alt="Feature 4"
                     />
@@ -426,7 +426,7 @@
                   </div>
                   <div class="col-6">
                     <img
-                      src="/assets/img/features/6.png"
+                      src="../assets/img/features/1.png"
                       class="card-img-right rounded-0 img-fluid"
                       alt="Feature 4"
                     />
@@ -461,7 +461,7 @@
           <div class="row">
             <div class="col-md-6 mb-5">
               <img
-                src="/assets/img/about.png"
+                src="../assets/img/about.png"
                 alt="About Image"
                 class="img-fluid rounded"
               />
@@ -495,7 +495,7 @@
           <div class="col text-center text-md-left">
             <img
               class="footer-logo"
-              src="assets/img/main-nobg.png"
+              src="../assets/img/main-nobg.png"
               alt="Logo"
             />
             <p>
@@ -554,41 +554,7 @@
       integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(document).ready(function () {
-        // Get current page URL
-        var url = window.location.href;
 
-        // Get target section IDs
-        var targetSections = [];
-        $("section[id]").each(function () {
-          targetSections.push($(this).attr("id"));
-        });
-
-        // Highlight nav links on scroll
-        $(window).scroll(function () {
-          // Get current scroll position
-          var scrollPos = $(document).scrollTop();
-
-          // Highlight nav links
-          $.each(targetSections, function (i, val) {
-            var targetSection = $("#" + val);
-
-            if (targetSection.length) {
-              if (targetSection.position().top <= scrollPos + 200) {
-                $("nav .navbar-nav li.active").removeClass("active");
-                $("nav .navbar-nav li.active-custom").removeClass(
-                  "active-custom"
-                );
-                $('nav .navbar-nav li:has(a[href="#' + val + '"])').addClass(
-                  "active active-custom"
-                );
-              }
-            }
-          });
-        });
-      });
-    </script>
-    <!-- <script src="assets/js/loader.js"></script> -->
+    <script src="../assets/js/navBehaviour.js"></script>
   </body>
 </html>
