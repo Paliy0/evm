@@ -47,7 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active active-custom">
-              <a class="nav-link" href="">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#pricing">Pricing</a>
@@ -543,11 +543,52 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/loader.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Get current page URL
+        var url = window.location.href;
+
+        // Get target section IDs
+        var targetSections = [];
+        $("section[id]").each(function () {
+          targetSections.push($(this).attr("id"));
+        });
+
+        // Highlight nav links on scroll
+        $(window).scroll(function () {
+          // Get current scroll position
+          var scrollPos = $(document).scrollTop();
+
+          // Highlight nav links
+          $.each(targetSections, function (i, val) {
+            var targetSection = $("#" + val);
+
+            if (targetSection.length) {
+              if (targetSection.position().top <= scrollPos + 200) {
+                $("nav .navbar-nav li.active").removeClass("active");
+                $("nav .navbar-nav li.active-custom").removeClass(
+                  "active-custom"
+                );
+                $('nav .navbar-nav li:has(a[href="#' + val + '"])').addClass(
+                  "active active-custom"
+                );
+              }
+            }
+          });
+        });
+      });
+    </script>
+    <!-- <script src="assets/js/loader.js"></script> -->
   </body>
 </html>

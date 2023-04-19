@@ -2,7 +2,7 @@ body {
   background-image: url("../img/contact-bg.svg");
 }
 
-.active-custom a {
+.active-custom {
   color: #3164f4 !important;
 }
 
