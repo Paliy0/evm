@@ -7,7 +7,7 @@ p {
   font-size: large;
 }
 
-.navbar {
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,6 +84,16 @@ nav a:hover {
   margin: 0 10px; /* add this line to add some spacing between the buttons */
 }
 
+.card .accent-tag {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #eeba29;
+  color: #000 !important;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
 .pricing-card {
   box-shadow: 0.5px 2px 6px rgba(0, 0, 0, 0.5);
   border: none;
@@ -137,8 +147,36 @@ nav a:hover {
   height: auto;
 }
 
+.steps {
+  background-color: #000;
+  color: #fff;
+}
+
+.steps h2 {
+  font-size: 70px;
+  margin-top: 2vh;
+}
+
 .steps img {
   width: 80%;
+}
+
+.request-demo-btn {
+  display: block;
+  margin: 5vh auto 4vh;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: #eeba29;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.request-demo-btn:hover {
+  background-color: yellow;
 }
 
 .text-gray {
