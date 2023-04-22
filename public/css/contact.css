@@ -2,17 +2,55 @@ body {
   background-image: url("../../assets/img/contact-bg.svg");
 }
 
+.footer-container a {
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif !important;
+}
+
+.navbar {
+  min-height: 32px !important;
+}
+
+.navbar-brand img {
+  margin-left: 4vw;
+  width: 35%;
+  height: auto;
+}
+nav a:hover {
+  color: #3164f4 !important;
+}
+
+.active-custom a {
+  color: #3164f4 !important;
+}
+
+.menu a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
 .active-custom {
   color: #3164f4 !important;
 }
 
 .container {
   margin-top: 13vh !important;
-  max-width: 90vw !important;
-  height: 80vh;
+  max-width: 70vw !important;
+  height: 60vh;
   background-color: #fff;
   border-radius: 5px;
-  padding: 10vw;
+  padding: 4vw;
 }
 
 .form-control-underline {
@@ -49,4 +87,27 @@ label {
 .form-group {
   display: flex;
   align-items: center;
+}
+
+.footer-container {
+  width: 50vw;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 20vw;
+  padding-bottom: 2vh;
+}
+
+.footer-logo {
+  width: 50%;
+  margin-bottom: 1.5vh;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  margin-bottom: 1.5vh;
 }

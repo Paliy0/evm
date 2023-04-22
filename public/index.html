@@ -29,9 +29,9 @@
   <body>
     <header>
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="index.html">
-          <img src="../assets/img/main-nobg.png" alt="Logo" />
+          <img src="../assets/img/main-white-nobg.webp" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -44,7 +44,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
             <li class="nav-item active active-custom">
               <a class="nav-link" href="#home">Home</a>
@@ -58,11 +61,13 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="btn-custom" href="#">Get started</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
-
     <main>
       <section class="main-section" id="home">
         <div class="container mt-2">
@@ -83,13 +88,20 @@
               </div>
             </div>
             <div class="col-md-6">
-              <img
-                src="https://res.cloudinary.com/dehswyyl9/image/upload/v1681813820/EVM/ezgif-1st_byuuva.webp"
-                data-src="image1.gif"
-                alt=""
-                class="card-img"
-                rel="preload"
-              />
+              <div class="image-container" style="position: relative">
+                <img
+                  src="https://res.cloudinary.com/dehswyyl9/image/upload/v1681813820/EVM/ezgif-1st_byuuva.webp"
+                  alt="Donut gif"
+                  class="card-img"
+                  style="position: absolute; top: 0; left: 0"
+                />
+                <img
+                  src="https://res.cloudinary.com/dehswyyl9/image/upload/v1682069226/Frame_61_zutuvr.png"
+                  alt="glow"
+                  class="card-img"
+                  style="position: absolute; top: 50px; left: 50px"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -102,7 +114,7 @@
         <br />
 
         <div class="container mt-5">
-          <div class="row no-gutters">
+          <div class="row">
             <div class="col-md-6">
               <div class="card2">
                 <h2 class="card-title mb-3">
@@ -492,7 +504,7 @@
       <div class="container footer-container">
         <hr />
         <div class="row">
-          <div class="col text-center text-md-left">
+          <div class="col mx-auto">
             <img
               class="footer-logo"
               src="../assets/img/main-nobg.png"
@@ -503,9 +515,9 @@
               All Rights Reserved.
             </p>
           </div>
-          <div class="col text-center">
+          <div class="col text-left">
             <div>
-              <a class="footer-link" href="">Home</a>
+              <a class="footer-link" href="#home">Home</a>
             </div>
             <div>
               <a class="footer-link" href="#pricing">Pricing</a>
@@ -517,7 +529,7 @@
               <a class="footer-link" href="contact.html">Contact</a>
             </div>
           </div>
-          <div class="col text-center">
+          <div class="col text-left">
             <div>
               <a class="footer-link" href="#">Facebook</a>
             </div>
@@ -531,7 +543,7 @@
               <a class="footer-link" href="#">Instagram</a>
             </div>
           </div>
-          <div class="col text-center text-md-right">
+          <div class="col text-left text-md-right">
             <div>
               <a class="footer-link" href="#">Privacy Agreement</a>
             </div>
@@ -539,7 +551,7 @@
               <a class="footer-link" href="#">Terms of Service</a>
             </div>
           </div>
-          <div class="col text-center text-md-right"></div>
+          <div class="col text-left text-md-right"></div>
         </div>
       </div>
     </footer>

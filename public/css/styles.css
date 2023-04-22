@@ -6,38 +6,59 @@ main {
 p {
   font-size: large;
 }
-/* Navbar */
+
 .navbar {
-  background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
+  min-height: 32px !important;
+  background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: "Poppins", sans-serif !important;
 }
 
-.navbar {
-  min-height: 32px !important;
+.navbar a {
+  color: #fff;
+  font-size: 18px; /* Increase font size */
 }
 
 .navbar-brand img {
-  margin-left: 4vw;
+  margin: 0 4vw; /* Center the logo */
   width: 35%;
   height: auto;
 }
+
 nav a:hover {
-  color: #3164f4 !important;
+  color: #eeba29 !important;
 }
 
 .active-custom a {
-  color: #3164f4 !important;
+  color: #eeba29 !important;
 }
 
-.menu a {
-  color: #000000;
+/* Button */
+.btn-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #eeba29;
+  color: #000 !important;
+  font-size: 18px;
   text-decoration: none;
-  margin-right: 20px;
+  margin-left: 20px; /* Add margin to separate from other links */
+}
+
+.btn-custom:hover {
+  color: #fff !important;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Main section */
@@ -180,8 +201,12 @@ nav a:hover {
 }
 
 .footer-container {
-  padding-bottom: 40px;
+  padding-bottom: 2vh;
   font-family: "Poppins", sans-serif;
+}
+
+.footer-container a {
+  text-decoration: none;
 }
 
 .footer-logo {
@@ -195,6 +220,7 @@ nav a:hover {
   display: block;
   margin-bottom: 1.5vh;
 }
+
 .card-text {
   margin-top: 2.5vh;
 }
