@@ -11,7 +11,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 40vw;
   min-height: 32px !important;
   background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -21,10 +21,11 @@ nav {
 .navbar a {
   color: #fff;
   font-size: 18px; /* Increase font size */
+  margin-left: 2vw;
 }
 
 .navbar-brand img {
-  margin: 0 4vw; /* Center the logo */
+  margin-left: 10vw;
   width: 35%;
   height: auto;
 }
@@ -94,13 +95,15 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.pricing-card {
-  box-shadow: 0.5px 2px 6px rgba(0, 0, 0, 0.5);
-  border: none;
+.feature-card img {
+  display: block;
+  max-height: 30vh;
+  width: auto;
+  height: auto;
 }
 
-.pricing-img img {
-  width: 50%; /* increase the width of the image to 50% */
+.feature-card a {
+  text-decoration: none;
 }
 
 .card2 h2 {
@@ -114,7 +117,7 @@ nav a:hover {
 }
 
 .main-section p {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Poppins", sans-serif;
 }
 
 .landingCard {
@@ -138,6 +141,10 @@ nav a:hover {
   padding-top: 10vh;
 }
 
+.medal {
+  padding-top: 10vh;
+}
+
 .card-body {
   padding: 40px;
 }
@@ -154,7 +161,11 @@ nav a:hover {
 
 .steps h2 {
   font-size: 70px;
-  margin-top: 2vh;
+  margin: 2vh 0;
+}
+
+.steps .card-body p {
+  font-size: 20px;
 }
 
 .steps img {
@@ -202,6 +213,7 @@ nav a:hover {
 
 .btn {
   margin: 0.3vw;
+  border-radius: 50px;
 }
 
 .btn-blue {
