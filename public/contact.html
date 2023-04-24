@@ -16,11 +16,9 @@
   <body>
     <header>
       <!-- Navigation -->
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top"
-      >
+      <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="index.html">
-          <img src="../assets/img/main-nobg.png" alt="Logo" />
+          <img src="../assets/img/main-white-nobg.webp" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -33,27 +31,33 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item active active-custom">
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#pricing">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#about">About Us</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active active-custom" href="">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn-custom" href="contact.html">Get started</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <div class="container mt-5 text-center">
-      <h2 class="text-center mb-4">Schedule an Appointment</h2>
-      <form>
+      <h1 class="text-center mb-4">Schedule an Appointment</h1>
+      <form id="contact-form">
         <div class="row">
           <div class="form-group">
             <label for="name">Hey, my name is</label>
@@ -85,9 +89,10 @@
             />
           </div>
         </div>
-
-        <button type="submit" class="btn btn-primary">Send Enquiry</button>
       </form>
+      <button type="submit" id="sendEmail" class="btn btn-primary">
+        Send Enquiry
+      </button>
       <p class="text-muted mt-3">We'll get back to you as soon as possible!</p>
     </div>
 
@@ -142,5 +147,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../assets/js/sendEmail.js"></script>
   </body>
 </html>

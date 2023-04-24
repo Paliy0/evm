@@ -1,47 +1,65 @@
 body {
   background-image: url("../../assets/img/contact-bg.svg");
+  font-family: "Poppins", sans-serif;
 }
 
 .footer-container a {
   text-decoration: none;
 }
 
-/* Navbar */
-.navbar {
-  background-color: #ffffff;
+nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 40vw;
+  min-height: 32px !important;
+  background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: "Poppins", sans-serif !important;
 }
 
-.navbar {
-  min-height: 32px !important;
+.navbar a {
+  color: #fff;
+  font-size: 18px; /* Increase font size */
+  margin-left: 2vw;
 }
 
 .navbar-brand img {
-  margin-left: 4vw;
+  margin-left: 10vw;
   width: 35%;
   height: auto;
 }
+
 nav a:hover {
-  color: #3164f4 !important;
+  color: #eeba29 !important;
 }
 
 .active-custom a {
-  color: #3164f4 !important;
+  color: #eeba29 !important;
 }
 
-.menu a {
-  color: #000000;
+/* Button */
+.btn-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #eeba29;
+  color: #000 !important;
+  font-size: 18px;
   text-decoration: none;
-  margin-right: 20px;
+  margin-left: 20px; /* Add margin to separate from other links */
 }
 
-.active-custom {
-  color: #3164f4 !important;
+.btn-custom:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -51,6 +69,11 @@ nav a:hover {
   background-color: #fff;
   border-radius: 5px;
   padding: 4vw;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-style: bold;
 }
 
 .form-control-underline {
@@ -70,6 +93,7 @@ nav a:hover {
 
 .form-control:focus {
   outline: none;
+  border: #fff;
 }
 
 /*edit input width*/
@@ -91,7 +115,6 @@ label {
 
 .footer-container {
   width: 50vw;
-  font-family: "Poppins", sans-serif;
   background-color: transparent;
   position: fixed;
   bottom: 0;
