@@ -11,7 +11,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40vw;
   min-height: 32px !important;
   background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -21,12 +20,12 @@ nav {
 .navbar a {
   color: #fff;
   font-size: 18px; /* Increase font size */
-  margin-left: 2vw;
+  margin-left: 2.3vw;
 }
 
 .navbar-brand img {
-  margin-left: 10vw;
-  width: 35%;
+  margin-left: 13vw;
+  width: 30%;
   height: auto;
 }
 
@@ -95,11 +94,14 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
+.feature-card {
+  margin: 2vh;
+  max-height: 30vh;
+}
+
 .feature-card img {
   display: block;
-  max-height: 30vh;
-  width: auto;
-  height: auto;
+  max-height: 25vh;
 }
 
 .feature-card a {
@@ -130,11 +132,13 @@ nav a:hover {
   align-items: center;
   height: 100%; /* add this line to center the content vertically */
 }
+.test-section {
+  background-color: #000;
+}
 
 .card1 {
   border-radius: none;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  background-color: #fff;
 }
 
 .card2 {
@@ -155,13 +159,19 @@ nav a:hover {
 }
 
 .steps {
+  height: 100vh;
+  padding-top: 5vh;
   background-color: #000;
   color: #fff;
 }
 
 .steps h2 {
   font-size: 70px;
-  margin: 2vh 0;
+  margin: 0 auto 10vh !important; /*top -leftright - bot*/
+}
+
+.steps h3 {
+  font-size: 40px;
 }
 
 .steps .card-body p {
@@ -236,6 +246,10 @@ nav a:hover {
 #pricing {
   padding-top: 10vh; /* Adjust this value to add the necessary padding */
   margin-top: -10vh; /* This will move the element up by the same amount as the padding */
+}
+
+#pricing h1 {
+  margin-bottom: 4vh;
 }
 
 #about {
