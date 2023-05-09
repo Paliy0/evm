@@ -47,7 +47,16 @@ nav a:hover {
 }
 
 .container-fluid {
-  margin-top: 10vh !important;
+  margin-top: 20vh !important;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row2 {
+  margin-top: 8vh;
 }
 
 .video-container {
@@ -63,6 +72,7 @@ nav a:hover {
   height: 100%;
   object-fit: cover;
 }
+
 .zoomed-video {
   position: absolute;
   top: 50%;
