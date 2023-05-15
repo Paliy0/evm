@@ -24,7 +24,7 @@ nav {
 }
 
 .navbar-brand img {
-  margin-left: 13vw;
+  margin-left: 10vw;
   width: 30%;
   height: auto;
 }
@@ -60,16 +60,17 @@ nav a:hover {
 
 .container {
   margin-top: 13vh !important;
-  max-width: 70vw !important;
+  max-width: 74vw !important; /* Increase the width as per your requirement */
+  padding: 4vw 7vw; /* Add padding to sides */
   height: 60vh;
   background-color: #fff;
   border-radius: 5px;
-  padding: 4vw;
 }
 
 .container h1 {
   font-size: 40px;
   font-style: bold;
+  margin-bottom: 8vh !important;
 }
 
 .form-control-underline {
@@ -107,15 +108,17 @@ label {
 .form-group {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .footer-container {
-  width: 50vw;
+  width: 60vw; /* Match this with the container width */
+  justify-content: space-between;
   background-color: transparent;
   position: fixed;
   bottom: 0;
   left: 0;
-  margin-left: 20vw;
+  margin-left: 12.5vw;
   padding-bottom: 2vh;
 }
 

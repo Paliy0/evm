@@ -1,17 +1,28 @@
-const form = document.querySelector("#contact-form");
-const sendBtn = document.querySelector("#sendEmail");
+document
+  .getElementById("sendEmail")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent form from submitting normally
 
-sendBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+    let name = document.getElementById("name").value;
+    let service = document.getElementById("service").value;
+    let contact = document.getElementById("contact").value;
 
-  const name = form.querySelector("#name").value;
-  const service = form.querySelector("#service").value;
-  const contact = form.querySelector("#contact").value;
+    let data = { name: name, service: service, contact: contact };
 
-  if (name !== "" && service !== "" && contact !== "") {
-    const mailtoLink = `mailto:contact@evminnovations.com?subject=Appointment Request&body=Name: ${name}%0D%0AService: ${service}%0D%0AContact: ${contact}`;
-    window.location.href = mailtoLink;
-  } else {
-    alert("Please fill out all fields before sending.");
-  }
-});
+    fetch("/sendEmail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+        alert("Email sent successfully");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("There was an error processing your request");
+      });
+  });
