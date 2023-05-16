@@ -3,10 +3,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.footer-container a {
-  text-decoration: none;
-}
-
 nav {
   display: flex;
   justify-content: center;
@@ -97,8 +93,8 @@ nav a:hover {
 .form-group input {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
-  width: 20vw;
+  margin-bottom: 0.6rem;
+  width: 12vw;
 }
 
 label {
@@ -111,14 +107,32 @@ label {
   justify-content: flex-start;
 }
 
+#service {
+  width: 20vw;
+}
+
+#contact {
+  width: 20vw;
+}
+
+#contactForm .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contactForm .col {
+  width: 100%;
+  max-width: 500px; /* Adjust this value according to your needs */
+}
+
 .footer-container {
-  width: 60vw; /* Match this with the container width */
-  justify-content: space-between;
+  width: 85vw; /* Match this with the container width */
+  justify-content: space-around;
   background-color: transparent;
   position: fixed;
   bottom: 0;
-  left: 0;
-  margin-left: 12.5vw;
+  margin-left: 13vw;
   padding-bottom: 2vh;
 }
 
@@ -132,4 +146,8 @@ label {
   color: #000;
   display: block;
   margin-bottom: 1.5vh;
+}
+
+.footer-container a {
+  text-decoration: none;
 }

@@ -1,10 +1,14 @@
 /* Body */
-main {
+body {
   font-family: "Poppins", sans-serif;
 }
 
 p {
   font-size: large;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav {
@@ -258,31 +262,18 @@ nav a:hover {
   margin-top: -10vh; /* This will move the element up by the same amount as the padding */
 }
 
+.about-section p {
+  font-weight: bold;
+  margin-top: 6vh;
+}
+.about-image {
+  height: 65vh; /* Adjust this value to suit your needs */
+  object-fit: cover;
+}
+
 .mission-img {
-  width: 100vh !important;
+  width: 80vh !important;
   height: auto;
-  z-index: -1;
-}
-
-.footer-container {
-  padding-bottom: 2vh;
-  font-family: "Poppins", sans-serif;
-}
-
-.footer-container a {
-  text-decoration: none;
-}
-
-.footer-logo {
-  width: 50%;
-  margin-bottom: 1.5vh;
-}
-
-.footer-link {
-  text-decoration: none;
-  color: #000;
-  display: block;
-  margin-bottom: 1.5vh;
 }
 
 .card-text {
@@ -302,4 +293,29 @@ nav a:hover {
 .card-img-right {
   height: auto;
   width: 100% !important;
+}
+
+.footer-container {
+  width: 85vw; /* Match this with the container width */
+  justify-content: space-around;
+  position: relative;
+  bottom: 0;
+  margin-left: 13vw;
+  padding-bottom: 2vh;
+}
+
+.footer-logo {
+  width: 50%;
+  margin-bottom: 1.5vh;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  margin-bottom: 1.5vh;
+}
+
+.footer-container a {
+  text-decoration: none;
 }

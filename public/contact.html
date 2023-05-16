@@ -63,48 +63,58 @@
     </header>
     <div class="container mt-5 text-center">
       <h1 class="text-center mb-4">Schedule an Appointment</h1>
-      <form id="contact-form">
-        <div class="row">
-          <div class="form-group">
-            <label for="name">Hey, my name is</label>
-            <input
-              type="text"
-              class="form-control form-control-underline"
-              id="name"
-              placeholder="Enter your name"
-            />
+      <form id="contactForm">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" required />
+            </div>
           </div>
-          <div class="form-group">
-            <label for="service">and I'm looking for</label>
-            <input
-              type="text"
-              class="form-control form-control-underline"
-              id="service"
-              placeholder="Enter the service you need"
-            />
+          <div class="col">
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" required />
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="form-group">
-            <label for="contact">Get in touch with me at</label>
-            <input
-              type="email"
-              required
-              class="form-control form-control-underline"
-              id="contact"
-              placeholder="Enter your contact information"
-            />
+        <div class="row ml-5">
+          <div class="col">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input
+                type="text"
+                class="form-control mr-2"
+                id="phoneNumber"
+                required
+              />
+            </div>
           </div>
         </div>
+
+        <div class="form-check mt-5">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="privacyPolicy"
+            required
+          />
+          <a class="form-check-label" for="privacyPolicy" href="privacy.html"
+            >Accept Privacy Policy</a
+          >
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Send Enquiry</button>
       </form>
-      <button type="submit" id="sendEmail" class="btn btn-primary mt-5">
-        Send Enquiry
-      </button>
-      <p class="text-muted mt-3">We'll get back to you as soon as possible!</p>
     </div>
 
     <footer class="footer-container">
-      <div class="row mx-auto">
+      <div class="row justify-content-center">
         <div class="col text-center text-md-left">
           <img
             class="footer-logo"
@@ -116,7 +126,7 @@
             All Rights Reserved.
           </p>
         </div>
-        <div class="col text-center">
+        <div class="col text-left ml-5">
           <div>
             <a class="footer-link" href="index.html">Home</a>
           </div>
@@ -158,18 +168,18 @@
             >
           </div>
         </div>
-        <div class="col text-left text-md-right">
+        <div class="col text-left">
           <div>
             <a class="footer-link" href="privacy.html">Privacy Agreement</a>
           </div>
           <div>
-            <a class="footer-link" href="termsofservice.html">Terms of Service</a>
+            <a class="footer-link" href="termsofservice.html"
+              >Terms of Service</a
+            >
           </div>
         </div>
-        <div class="col text-left text-md-right"></div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
     <script src="../assets/js/sendEmail.js"></script>
   </body>
