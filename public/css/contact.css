@@ -1,6 +1,14 @@
 body {
   background-image: url("../../assets/img/contact-bg.svg");
+  display: flex; /* new */
+  flex-direction: column; /* new */
+  min-height: 100vh; /* new */
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+header {
+  flex: 0; /* new */
 }
 
 nav {
@@ -11,6 +19,8 @@ nav {
   background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: "Poppins", sans-serif !important;
+  font-weight: 600;
+  font-style: bold;
 }
 
 .navbar a {
@@ -57,8 +67,8 @@ nav a:hover {
 .container {
   margin-top: 13vh !important;
   max-width: 74vw !important; /* Increase the width as per your requirement */
-  padding: 4vw 7vw; /* Add padding to sides */
-  height: 60vh;
+  padding: 2vw 3.5vw; /* Add padding to sides */
+  flex: 1; /* new */
   background-color: #fff;
   border-radius: 5px;
 }
@@ -84,56 +94,68 @@ nav a:hover {
   outline: none;
 }
 
-.form-control:focus {
-  outline: none;
-  border: #fff;
-}
-
-/*edit input width*/
-.form-group input {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.6rem;
-  width: 12vw;
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 label {
-  margin-right: 1rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem; /* increase as needed */
 }
 
 .form-group {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-#service {
-  width: 20vw;
-}
-
-#contact {
-  width: 20vw;
-}
-
-#contactForm .row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-#contactForm .col {
   width: 100%;
-  max-width: 500px; /* Adjust this value according to your needs */
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #007bff;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-group textarea {
+  border: 2px solid #007bff;
+}
+
+.form-group input:focus {
+  border-bottom: 2px solid #007bff;
+  box-shadow: none;
+}
+
+.form-group textarea:focus {
+  border: 2px solid #007bff;
+  box-shadow: none;
+}
+.form-check-label {
+  color: #000;
+}
+
+.form-check-label:hover {
+  text-decoration: none;
 }
 
 .footer-container {
-  width: 85vw; /* Match this with the container width */
+  width: 85vw;
   justify-content: space-around;
   background-color: transparent;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   margin-left: 13vw;
   padding-bottom: 2vh;
+  flex: 0;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600;
+  font-style: bold;
 }
 
 .footer-logo {

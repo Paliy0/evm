@@ -7,8 +7,10 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/contact.css" />
@@ -61,59 +63,86 @@
         </div>
       </nav>
     </header>
-    <div class="container mt-5 text-center">
+    <div class="container mt-2 text-center">
       <h1 class="text-center mb-4">Schedule an Appointment</h1>
-      <form id="contactForm">
-        <div class="row justify-content-center">
-          <div class="col">
+      <form
+        id="contact form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/myyaqojl"
+        method="post"
+      >
+        <fieldset id="fs-frm-inputs">
+          <div class="row">
             <div class="form-group">
               <label for="firstName">First Name</label>
-              <input type="text" class="form-control" id="firstName" required />
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" class="form-control" id="lastName" required />
-            </div>
-          </div>
-        </div>
-        <div class="row ml-5">
-          <div class="col">
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" required />
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-group">
-              <label for="phoneNumber">Phone Number</label>
               <input
                 type="text"
-                class="form-control mr-2"
-                id="phoneNumber"
-                required
+                name="name"
+                class="form-control"
+                id="firstName"
+                required=""
               />
             </div>
           </div>
-        </div>
-
+          <div class="row">
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                id="lastName"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" name="email" id="email-address" required="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number (Optional)</label>
+              <input
+                class="form-control mr-2"
+                type="telephone"
+                name="telephone"
+                id="telephone"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="message">Message (Optional)</label>
+              <textarea
+                rows="4"
+                cols="20"
+                class="form-control mr-2"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+          </div>
+        </fieldset>
         <div class="form-check mt-5">
           <input
             type="checkbox"
             class="form-check-input"
             id="privacyPolicy"
             required
-          />
+          />Accept Our
           <a class="form-check-label" for="privacyPolicy" href="privacy.html"
-            >Accept Privacy Policy</a
+            >Privacy Policy</a
           >
         </div>
+
         <button type="submit" class="btn btn-primary mt-4">Send Enquiry</button>
       </form>
     </div>
 
-    <footer class="footer-container">
+    <footer class="footer-container mt-5">
       <div class="row justify-content-center">
         <div class="col text-center text-md-left">
           <img
